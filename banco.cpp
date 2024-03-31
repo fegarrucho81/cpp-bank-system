@@ -165,6 +165,7 @@ public:
         cout << "-----------------" << endl;
 
         cout << "Fim do teste de transferencia de dinheiro." << endl;
+        cout << "-----------------" << endl;
     }
 
     // posso adicionar outros testes posteriormente
@@ -222,6 +223,9 @@ bool Usuarios::transferirDinheiro(string origem, string destino, double valor) {
 }
 
 int main() {
-    
+    Usuarios usuarios;
+
+    Testes::testeTransferirDinheiro(usuarios);       
+
     return 0;
 }
